@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication | FitTrack</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body class="login-page">
+    <div class="split-layout">
+        <div class="split-left" style="background: url('images/hero1.png') no-repeat center center; background-size: cover;">
+            <a href="index.html" class="back-home"><i class="fas fa-arrow-left"></i> Back to Home</a>
+            <div class="split-left-content">
+                <h1>Unlock Your Potential.</h1>
+                <p>Log in to access your dashboard and track your progress statically.</p>
+            </div>
+        </div>
+        <div class="split-right">
+            <!-- Login Form -->
+            <div class="auth-form-container" id="loginFormContainer">
+                <div class="auth-header">
+                    <h2>Welcome Back</h2>
+                    <p>Static Preview: Log in to continue your fitness journey</p>
+                </div>
+                <form class="auth-form" action="membership.html" method="GET">
+                    <div class="mb-3">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-auth">Login</button>
+                    <div class="auth-switch">
+                        Don't have an account? <a href="#" id="showRegister">Sign up</a>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Register Form -->
+            <div class="auth-form-container d-none" id="registerFormContainer">
+                <div class="auth-header">
+                    <h2>Join FitTrack</h2>
+                    <p>Static Preview: Create an account</p>
+                </div>
+                <form class="auth-form" action="login.html" method="GET">
+                    <div class="mb-3">
+                        <label class="form-label">Username</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-auth mt-2" onclick="alert('Static HTML Demo: Registered successfully!');">Create Account</button>
+                    <div class="auth-switch">
+                        Already have an account? <a href="#" id="showLogin">Log in</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('showRegister').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('loginFormContainer').classList.add('d-none');
+            document.getElementById('registerFormContainer').classList.remove('d-none');
+        });
+        document.getElementById('showLogin').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('registerFormContainer').classList.add('d-none');
+            document.getElementById('loginFormContainer').classList.remove('d-none');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs | FitTrack</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top glass-nav">
+        <div class="container">
+            <a class="navbar-brand text-primary fw-bold fs-3" href="index.html">FIT<span class="text-white">TRACK</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="programs.html">Programs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="membership.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login / Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="py-5 text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mt-5 text-white">OUR <span class="text-primary">PROGRAMS</span></h1>
+            <p class="lead text-secondary">Find the perfect workout routine tailored to your goals.</p>
+        </div>
+    </header>
+
+    <!-- Filters -->
+    <section class="container mb-5">
+        <div class="d-flex justify-content-center gap-2 flex-wrap">
+            <button class="btn btn-outline-primary active">All</button>
+            <button class="btn btn-outline-secondary">Strength</button>
+            <button class="btn btn-outline-secondary">Cardio</button>
+            <button class="btn btn-outline-secondary">Yoga</button>
+            <button class="btn btn-outline-secondary">HIIT</button>
+        </div>
+    </section>
+
+    <!-- Programs Grid -->
+    <section class="container pb-5">
+        <div class="row g-4 d-flex">
+            <!-- Program 1 -->
+            <div class="col-md-6 col-lg-4 d-flex">
+                <div class="card bg-dark text-white border-secondary h-100 flex-fill w-100">
+                    <img src="images/hero1.png" class="card-img-top program-img" alt="Strength Training" style="height: 200px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column p-4">
+                        <span class="badge bg-primary mb-2 align-self-start">Strength</span>
+                        <h5 class="card-title fw-bold">Powerbuilding 101</h5>
+                        <p class="card-text text-secondary mb-4 flex-grow-1">A perfect blend of powerlifting and bodybuilding designed to build raw strength and muscle mass.</p>
+                        <ul class="list-unstyled mb-4 text-secondary small">
+                            <li><i class="fas fa-clock text-primary me-2"></i> 12 Weeks</li>
+                            <li><i class="fas fa-signal text-primary me-2"></i> Intermediate</li>
+                            <li><i class="fas fa-fire text-primary me-2"></i> High Intensity</li>
+                        </ul>
+                        <div class="mt-auto">
+                            <a href="login.html" class="btn btn-outline-primary w-100">Join Program</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Program 2 -->
+            <div class="col-md-6 col-lg-4 d-flex">
+                <div class="card bg-dark text-white border-secondary h-100 flex-fill w-100">
+                    <img src="images/hero2.png" class="card-img-top program-img" alt="HIIT" style="height: 200px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column p-4">
+                        <span class="badge bg-danger mb-2 align-self-start">HIIT</span>
+                        <h5 class="card-title fw-bold">Fat Burn Extreme</h5>
+                        <p class="card-text text-secondary mb-4 flex-grow-1">High-intensity interval training to maximize calorie burn in minimum time. Push your limits.</p>
+                        <ul class="list-unstyled mb-4 text-secondary small">
+                            <li><i class="fas fa-clock text-danger me-2"></i> 8 Weeks</li>
+                            <li><i class="fas fa-signal text-danger me-2"></i> Advanced</li>
+                            <li><i class="fas fa-fire text-danger me-2"></i> Max Intensity</li>
+                        </ul>
+                        <div class="mt-auto">
+                            <a href="login.html" class="btn btn-outline-danger w-100">Join Program</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Program 3 -->
+            <div class="col-md-6 col-lg-4 d-flex">
+                <div class="card bg-dark text-white border-secondary h-100 flex-fill w-100">
+                    <img src="images/hero3.png" class="card-img-top program-img" alt="Yoga" style="height: 200px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column p-4">
+                        <span class="badge bg-success mb-2 align-self-start">Yoga</span>
+                        <h5 class="card-title fw-bold">Mindful Movement</h5>
+                        <p class="card-text text-secondary mb-4 flex-grow-1">Improve flexibility, balance, and mental clarity with this comprehensive yoga journey.</p>
+                        <ul class="list-unstyled mb-4 text-secondary small">
+                            <li><i class="fas fa-clock text-success me-2"></i> 4 Weeks</li>
+                            <li><i class="fas fa-signal text-success me-2"></i> Beginner</li>
+                            <li><i class="fas fa-fire text-success me-2"></i> Low Intensity</li>
+                        </ul>
+                        <div class="mt-auto">
+                            <a href="login.html" class="btn btn-outline-success w-100">Join Program</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-dark mt-auto border-top border-secondary pt-4">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h5 class="text-uppercase text-primary fw-bold">FITTRACK</h5>
+                    <p class="text-secondary">Transforming lives through fitness and dynamic technology.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
